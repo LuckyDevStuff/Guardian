@@ -1,0 +1,4 @@
+name: Guardian
+version: ${project.version}
+main: de.mcgamer.guardian.Main
+description: Basic Minecraft Server security System
