@@ -1,0 +1,19 @@
+MySQL:
+  host: 127.0.0.1
+  port: 3306
+  username: 'root'
+  password: ''
+
+Ban:
+  TBanMessage: ['§cYou are banned from this Server', '§6Reason: %REASON%', '§eTime Left: %TIMELEFT%', '§4Banned by %BANNERNAME%', '§aYour BanID: §2%BANID%']
+  PBanMessage: ['§cYou are §4PERMANENTLY §cbanned from this Server', '§6Reason: %REASON%', '§eBanned At: %BANNEDAT%', '§4Banned by %BANNERNAME%', '§aYour BanID: §2%BANID%']
+
+Kick:
+  message: '§cYou were kicked from This Server/n§aReason:§2%REASON%'
+
+Permissions:
+  NoPermissionMessage: "§cYou haven't got the Permissions to execute this!"
+  tban: 'guardian.ban'
+  pban: 'guardian.ban'
+  kick: 'guardian.kick'
+  unban: 'guardian.unban'

@@ -1,4 +1,5 @@
 name: Guardian
-version: ${project.version}
+version: v1.0
 main: de.mcgamer.guardian.Main
+author: LuckyDev
 description: Basic Minecraft Server security System
