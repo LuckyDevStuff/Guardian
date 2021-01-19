@@ -57,6 +57,30 @@ public class MySQLTable {
         }
     }
 
+    public ArrayList<Long> lGetAllWhereIs(String column, String where, String is) throws MySQLException {
+        try {
+            ArrayList<Long> out = new ArrayList<>();
+            ResultSet resultSet = database.connection.createStatement().executeQuery("SELECT * FROM `" + name + "` WHERE `" + where + "` = '" + is + "'");
+            while(resultSet.next())
+                out.add(resultSet.getLong(column));
+            return out;
+        } catch(SQLException exception) {
+            throw new MySQLException("Exception occurred while selecting stuff in table '" + name + "'!\nSQLException: " + exception.toString());
+        }
+    }
+
+    public ArrayList<String> sGetAllWhereIs(String column, String where, String is) throws MySQLException {
+        try {
+            ArrayList<String> out = new ArrayList<>();
+            ResultSet resultSet = database.connection.createStatement().executeQuery("SELECT * FROM `" + name + "` WHERE `" + where + "` = '" + is + "'");
+            while(resultSet.next())
+                out.add(resultSet.getString(column));
+            return out;
+        } catch(SQLException exception) {
+            throw new MySQLException("Exception occurred while selecting stuff in table '" + name + "'!\nSQLException: " + exception.toString());
+        }
+    }
+
     public ArrayList<String> getContents(String column) throws MySQLException {
         try {
             ArrayList<String> out = new ArrayList<>();

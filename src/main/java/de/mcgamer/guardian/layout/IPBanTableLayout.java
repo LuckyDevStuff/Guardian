@@ -2,23 +2,23 @@ package de.mcgamer.guardian.layout;
 
 import de.luckydev.luckyms.column.*;
 
-public class BanTableLayout {
+public class IPBanTableLayout {
     @PrimaryKey
     @NotNull
-    @ColumnAttributes(type= ColumnType.VARCHAR, length = 64)
-    Column uuid;
-
-    @NotNull
-    @ColumnAttributes(type = ColumnType.VARCHAR, length = 16)
-    Column banid;
+    @ColumnAttributes(type = ColumnType.VARCHAR, length = 64)
+    Column ip;
 
     @NotNull
     @ColumnAttributes(type = ColumnType.BIGINT)
-    Column bannedat;
+    Column banId;
 
     @NotNull
     @ColumnAttributes(type = ColumnType.BIGINT)
-    Column bantime;
+    Column bannedAt;
+
+    @NotNull
+    @ColumnAttributes(type = ColumnType.BIGINT)
+    Column banTime;
 
     @NotNull
     @ColumnAttributes(type = ColumnType.VARCHAR)
@@ -26,9 +26,9 @@ public class BanTableLayout {
 
     @NotNull
     @ColumnAttributes(type = ColumnType.VARCHAR)
-    Column bannername;
+    Column bannedBy;
 
     @NotNull
-    @ColumnAttributes(type = ColumnType.BOOLEAN)
-    Column permanently;
+    @ColumnAttributes(type = ColumnType.VARCHAR, length = 64)
+    Column uuid;
 }

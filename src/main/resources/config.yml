@@ -1,19 +1,37 @@
 MySQL:
   host: 127.0.0.1
   port: 3306
-  username: 'root'
+  username: root
   password: ''
 
 Ban:
-  TBanMessage: ['§cYou are banned from this Server', '§6Reason: %REASON%', '§eTime Left: %TIMELEFT%', '§4Banned by %BANNERNAME%', '§aYour BanID: §2%BANID%']
-  PBanMessage: ['§cYou are §4PERMANENTLY §cbanned from this Server', '§6Reason: %REASON%', '§eBanned At: %BANNEDAT%', '§4Banned by %BANNERNAME%', '§aYour BanID: §2%BANID%']
+  see: guardian.seeBan
+  seeMessage: '§4§lBan§7>> §r§cThe Player §6"%PLAYER%" §chas banned §6"%BANNED%" §cfor the reason §6"%REASON%" §ctime: §6%TIME%§c!'
+  PBan: '§cDu wurdest §l§4Permanent §r§cvom Server gebannt/n§7Grund: §6%REASON%/n§r§7Gebannt von: §6%BANNEDBY%/n§7Ban Id: #%BANID%'
+  TBan: '§cDu wurdest §l§4Temporär §r§cvom Server gebannt/n§7Grund: §6%REASON%/n§r§7Zeit übrig: §6%TIMELEFT%/n§7Gebannt von: §6%BANNEDBY%/n§7Ban Id: #%BANID%'
+  notBanAble:
+    - LuckyDev
+
+UnBan:
+  see: guardian.seeUnban
+  seeMessage: '§4§lUnban§7>> §r§cThe Player §6"%PLAYER%" §chas unbanned §6"%UNBANNED%"§c!'
 
 Kick:
-  message: '§cYou were kicked from This Server/n§aReason:§2%REASON%'
+  see: guardian.seeKick
+  seeMessage: '§c§lKICK§7>> §r§6The Player §a"%PLAYER%" §6has kicked §a"%KICKED%" §6for the reason §a"%REASON%"§6!'
+  message: '§cDu wurdest von diesem Server gekickt!/n§7Grund: §6%REASON%/n§7Gekickt von: §6%KICKEDBY%'
 
 Permissions:
   NoPermissionMessage: "§cYou haven't got the Permissions to execute this!"
-  tban: 'guardian.ban'
-  pban: 'guardian.ban'
-  kick: 'guardian.kick'
-  unban: 'guardian.unban'
+  Commands:
+    tban: guardian.ban
+    pban: guardian.ban
+    kick: guardian.kick
+    unban: guardian.unban
+    ban: guardian.ban
+    reloadconfig: guardian.reloadconfig
+
+TeamChat:
+  permission: guardian.teamchat
+  prefix: '@Team'
+  messageSchema: '§6@Team Chat§7>> %SENDER% §r§7-> §r%MESSAGE%'
