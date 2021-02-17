@@ -1,6 +1,6 @@
-package de.mcgamer.guardian.listener;
+package de.luckydev.guardian.listener;
 
-import de.mcgamer.guardian.Main;
+import de.luckydev.guardian.Main;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;

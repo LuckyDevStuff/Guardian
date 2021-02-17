@@ -1,23 +1,23 @@
-package de.mcgamer.guardian;
+package de.luckydev.guardian;
 
 import com.google.gson.Gson;
+import de.luckydev.guardian.commands.*;
+import de.luckydev.guardian.listener.ChatListener;
 import de.luckydev.luckyms.MySQLDatabase;
 import de.luckydev.luckyms.MySQLException;
 import de.luckydev.luckyms.MySQLService;
 import de.mcgamer.guardian.commands.*;
-import de.mcgamer.guardian.layout.IPBanTableLayout;
-import de.mcgamer.guardian.layout.UUIDBanTableLayout;
-import de.mcgamer.guardian.listener.ChatListener;
-import de.mcgamer.guardian.listener.LoginListener;
-import de.mcgamer.guardian.util.UUIDUtil;
-import de.mcgamer.guardian.util.YamlConfigurationUtil;
+import de.luckydev.guardian.layout.IPBanTableLayout;
+import de.luckydev.guardian.layout.UUIDBanTableLayout;
+import de.luckydev.guardian.listener.LoginListener;
+import de.luckydev.guardian.util.UUIDUtil;
+import de.luckydev.guardian.util.YamlConfigurationUtil;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.api.plugin.PluginManager;
 import net.md_5.bungee.config.Configuration;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.UUID;
 
 public final class Main extends Plugin {

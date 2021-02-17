@@ -1,4 +1,4 @@
-package de.mcgamer.guardian.layout;
+package de.luckydev.guardian.layout;
 
 import de.luckydev.luckyms.column.*;
 

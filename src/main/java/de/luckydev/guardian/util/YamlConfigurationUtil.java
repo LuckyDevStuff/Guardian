@@ -1,14 +1,12 @@
-package de.mcgamer.guardian.util;
+package de.luckydev.guardian.util;
 
-import de.mcgamer.guardian.Main;
+import de.luckydev.guardian.Main;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 
 public class YamlConfigurationUtil {

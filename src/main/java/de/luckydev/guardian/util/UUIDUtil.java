@@ -1,7 +1,7 @@
-package de.mcgamer.guardian.util;
+package de.luckydev.guardian.util;
 
 import com.google.common.reflect.TypeToken;
-import de.mcgamer.guardian.Main;
+import de.luckydev.guardian.Main;
 
 import java.io.IOException;
 import java.net.URL;
