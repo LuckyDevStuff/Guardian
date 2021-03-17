@@ -1,5 +1,5 @@
 name: Guardian
 version: v1.0
-main: de.mcgamer.guardian.Main
+main: de.luckydev.guardian.Main
 author: LuckyDev
 description: Basic Minecraft Server security System
